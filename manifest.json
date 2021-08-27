@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "WazirX-Custom-Portfolio",
+    "version": "0.1.0",
+    "description": "",
+    "icons": {
+        "16": "./images/16x16.png",
+        "32": "./images/32x32.png",
+        "48": "./images/48x48.png",
+        "128": "./images/128x128.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icons": {
+            "16": "./images/16x16.png",
+            "32": "./images/32x32.png",
+            "48": "./images/48x48.png",
+            "128": "./images/128x128.png"
+        },
+        "default_title": "Portfolio"
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://wazirx.com/*"
+    ],
+    "background": {
+        "service_worker": "./background.js"
+    }
+}
